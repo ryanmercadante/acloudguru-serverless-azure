@@ -283,7 +283,7 @@ var AddSpeaker = Vue.extend({
     createSpeaker: function() {
       var speaker = this.speaker;
       let params = {
-        id: parseInt(Math.random().toString().split('.')[1]),
+        id: parseInt(Math.random().toString().split('.')[1] % 1000),
         name: speaker.name,
         title: speaker.title,
         location: speaker.location,
